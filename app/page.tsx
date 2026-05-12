@@ -17,30 +17,16 @@ export default function Home() {
 
 /* ─── Logo ─── */
 
-function ShieldLogo({ className = "h-8 w-8" }: { className?: string }) {
+function WolfMark({ size = 32 }: { size?: number }) {
   return (
-    <svg
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
+    <img
+      src="/wolfpack-mark.png"
+      alt=""
       aria-hidden="true"
-    >
-      <path
-        d="M16 2L4 8v8c0 7.73 5.12 14.95 12 16 6.88-1.05 12-8.27 12-16V8L16 2z"
-        stroke="currentColor"
-        strokeWidth="2"
-        fill="none"
-      />
-      <path
-        d="M11 16l4 4 7-8"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-    </svg>
+      width={size}
+      height={size}
+      className="block object-contain"
+    />
   );
 }
 
@@ -54,7 +40,7 @@ function Nav() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-3 text-stone-100">
-          <ShieldLogo className="h-8 w-8 text-accent" />
+          <WolfMark size={32} />
           <div className="leading-none">
             <span className="block font-mono text-sm font-medium tracking-widest text-stone-100">
               WOLFPACK
@@ -322,7 +308,9 @@ function Contact() {
           <div className="overflow-hidden border border-stone-800 bg-stone-900/50">
             <div className="h-1 bg-gradient-to-r from-accent-dark via-accent to-accent-dark" />
             <div className="p-8 text-center md:p-12">
-              <ShieldLogo className="mx-auto mb-8 h-10 w-10 text-accent" />
+              <div className="mx-auto mb-8 w-14">
+                <WolfMark size={56} />
+              </div>
               <h2 className="mb-4 font-serif text-3xl font-light text-stone-200">
                 Let&rsquo;s talk about your security.
               </h2>

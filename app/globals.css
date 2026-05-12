@@ -16,6 +16,10 @@
   --color-accent-dark: #8B3A2A;
   --color-accent-light: #D4806A;
 
+  --color-accent-10: rgba(196, 101, 74, 0.10);
+  --color-accent-20: rgba(196, 101, 74, 0.20);
+  --color-accent-40: rgba(196, 101, 74, 0.40);
+
   --font-serif: "Crimson Pro", Georgia, serif;
   --font-sans: "Outfit", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
