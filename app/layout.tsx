@@ -24,26 +24,39 @@ const ibmPlexMono = IBM_Plex_Mono({
 const siteUrl = "https://wolfpacksecurity.org";
 
 export const metadata: Metadata = {
-  title: "Wolfpack Security LLC — Cybersecurity Consulting",
+  title:
+    "Wolfpack Security LLC — Compliance Testing & Penetration Testing Consulting",
   description:
-    "Cybersecurity consulting for organizations that need to demonstrate their security posture. CMMC readiness, penetration testing, risk assessments, and compliance management. Based in Harrisonburg, Virginia.",
+    "Cybersecurity consulting firm specializing in compliance testing, penetration testing, CMMC readiness, and risk assessments. We tailor every engagement to your organization's size and regulatory requirements. Based in Harrisonburg, Virginia — serving clients nationwide.",
   metadataBase: new URL(siteUrl),
   keywords: [
+    "compliance testing",
+    "penetration testing",
     "cybersecurity consulting",
     "CMMC compliance",
-    "penetration testing",
-    "NIST 800-171",
-    "SOC 2",
+    "CMMC readiness",
+    "NIST 800-171 assessment",
+    "SOC 2 compliance",
+    "SOC 2 audit preparation",
+    "HIPAA compliance testing",
+    "ISO 27001 certification",
+    "security risk assessment",
     "vendor risk management",
-    "Harrisonburg Virginia",
-    "defense contractor security",
-    "security assessment",
+    "vulnerability assessment",
+    "network penetration testing",
+    "application penetration testing",
+    "defense contractor cybersecurity",
+    "cybersecurity consultant Harrisonburg Virginia",
+    "third party risk management",
+    "security compliance consultant",
+    "C3PAO assessment preparation",
   ],
   authors: [{ name: "Wolfpack Security LLC" }],
   openGraph: {
-    title: "Wolfpack Security LLC — Cybersecurity Consulting",
+    title:
+      "Wolfpack Security LLC — Compliance Testing & Penetration Testing",
     description:
-      "Cybersecurity consulting for organizations that need to demonstrate their security posture to the people who matter.",
+      "Cybersecurity consulting tailored to your organization. Compliance testing, penetration testing, CMMC readiness, and risk assessments — scoped to fit your size, industry, and regulatory requirements.",
     url: siteUrl,
     siteName: "Wolfpack Security LLC",
     locale: "en_US",
@@ -51,9 +64,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Wolfpack Security LLC — Cybersecurity Consulting",
+    title:
+      "Wolfpack Security LLC — Compliance Testing & Penetration Testing",
     description:
-      "Cybersecurity consulting for organizations that need to demonstrate their security posture to the people who matter.",
+      "Cybersecurity consulting tailored to your organization. Compliance testing, penetration testing, CMMC readiness, and risk assessments.",
   },
   robots: {
     index: true,
@@ -74,7 +88,7 @@ export default function RootLayout({
     "@type": "ProfessionalService",
     name: "Wolfpack Security LLC",
     description:
-      "Cybersecurity consulting for organizations that need to demonstrate their security posture.",
+      "Cybersecurity consulting firm specializing in compliance testing, penetration testing, CMMC readiness, and risk assessments. Engagements tailored to your organization's size and regulatory requirements.",
     url: siteUrl,
     address: {
       "@type": "PostalAddress",
@@ -84,11 +98,14 @@ export default function RootLayout({
     },
     areaServed: "US",
     serviceType: [
-      "Cybersecurity Consulting",
-      "CMMC Compliance",
+      "Compliance Testing",
       "Penetration Testing",
-      "Security Assessments",
+      "CMMC Compliance Readiness",
+      "Security Risk Assessment",
+      "NIST 800-171 Assessment",
+      "SOC 2 Audit Preparation",
       "Vendor Risk Management",
+      "Cybersecurity Consulting",
     ],
     email: "info@wolfpacksecurity.org",
   };
