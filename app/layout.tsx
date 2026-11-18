@@ -21,7 +21,10 @@ const ibmPlexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://wolfpacksecurity.org";
+// The website lives on wolfpack-security.org (hyphenated, Cloudflare DNS ->
+// Vercel). wolfpacksecurity.org is the Google Workspace mail domain and serves
+// no site, so it must not be used for canonical, OpenGraph or JSON-LD URLs.
+const siteUrl = "https://www.wolfpack-security.org";
 
 export const metadata: Metadata = {
   title:
